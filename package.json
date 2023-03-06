@@ -1,0 +1,87 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "chatGPT-Simple",
+  "title": "chatGPT Simple",
+  "description": "chatGPT yoooooooooooooooooooooooooooooo",
+  "icon": "command-icon.png",
+  "author": "Lockeysama",
+  "owner": "Lockey",
+  "categories": [
+    "Other"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "chatGPT Simple",
+      "subtitle": "chatGPT Simple",
+      "description": "Template with a plain detail view",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "Query",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "preferences": [
+    {
+      "name": "apiKey",
+      "type": "password",
+      "required": true,
+      "title": "API Key",
+      "description": "OpenAI API Key",
+      "placeholder": "OpenAI API Key"
+    },
+    {
+      "name": "proxyHost",
+      "type": "textfield",
+      "required": false,
+      "title": "Proxy Host",
+      "description": "Proxy Host",
+      "placeholder": "ProxyHost"
+    },
+    {
+      "name": "proxyPort",
+      "type": "textfield",
+      "required": false,
+      "title": "Proxy Port",
+      "description": "Proxy Port",
+      "placeholder": "Proxy Port"
+    },
+    {
+      "name": "proxyProtocol",
+      "type": "textfield",
+      "required": false,
+      "title": "Proxy Protocol",
+      "description": "Proxy Protocol",
+      "placeholder": "Proxy Protocol"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.48.5",
+    "@raycast/utils": "^1.5.2",
+    "axios": "^1.3.4",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
